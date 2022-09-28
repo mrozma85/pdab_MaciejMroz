@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PDABModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Adres">
+          <Key>
+            <PropertyRef Name="IdAdresu" />
+          </Key>
+          <Property Name="IdAdresu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Miejscowosc" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ulica" Type="nvarchar" MaxLength="50" />
+          <Property Name="NrDomu" Type="nvarchar" MaxLength="50" />
+          <Property Name="NrLokalu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kod" Type="nvarchar" MaxLength="50" />
+          <Property Name="Miasto" Type="nvarchar" MaxLength="50" />
+          <Property Name="Poczta" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Faktura">
+          <Key>
+            <PropertyRef Name="IdFaktury" />
+          </Key>
+          <Property Name="IdFaktury" Type="int" Nullable="false" />
+          <Property Name="Numer" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataCzasWystawienia" Type="date" />
+          <Property Name="IdLokazlizacji" Type="int" />
+          <Property Name="IdKontrahenta" Type="int" />
+          <Property Name="IdStanu" Type="int" />
+          <Property Name="Rabat" Type="int" />
+          <Property Name="IdFormyPlatnosci" Type="int" />
+          <Property Name="IdRachunku" Type="int" />
+          <Property Name="DataCzasZaksiegowania" Type="date" />
+          <Property Name="TerminPlatnosci" Type="date" />
+          <Property Name="IdPracownikaWystawiajacego" Type="int" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+        </EntityType>
+        <EntityType Name="FormaPlatnosci">
+          <Key>
+            <PropertyRef Name="IdFormyPlatnosci" />
+          </Key>
+          <Property Name="IdFormyPlatnosci" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazwa" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="JednostkaMiaryTowaru">
+          <Key>
+            <PropertyRef Name="IdJednostkiMiaryTowaru" />
+          </Key>
+          <Property Name="IdJednostkiMiaryTowaru" Type="int" Nullable="false" />
+          <Property Name="Nazwa" Type="nvarchar" MaxLength="50" />
+          <Property Name="Opis" Type="nvarchar" MaxLength="50" />
+          <Property Name="Parametry" Type="nvarchar" MaxLength="50" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kontrahent">
+          <Key>
+            <PropertyRef Name="IdKontrahenta" />
+          </Key>
+          <Property Name="IdKontrahenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazwa" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdRodzajKontrahenta" Type="int" />
+          <Property Name="IdAdresu" Type="int" />
+          <Property Name="NIP" Type="nvarchar" MaxLength="50" />
+          <Property Name="REGON" Type="nvarchar" MaxLength="50" />
+          <Property Name="TelefonKomorkowy1" Type="nvarchar" MaxLength="50" />
+          <Property Name="TelefonKomorkowy2" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PozycjaPrzyjeciaZewnetrznegoTowaru">
+          <Key>
+            <PropertyRef Name="IdPozycjiPrzyjeciaZewnetrznegoTowaru" />
+          </Key>
+          <Property Name="IdPozycjiPrzyjeciaZewnetrznegoTowaru" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPrzyjeciaZewnetrznego" Type="int" />
+          <Property Name="IdProduktu" Type="int" />
+          <Property Name="IdTowarJednostkiMiaryTowaru" Type="int" />
+          <Property Name="Ilosc" Type="int" />
+          <Property Name="CenaNettoZakupu" Type="float" />
+          <Property Name="IdStawkiVatZakupu" Type="int" />
+          <Property Name="IdLokalizacji" Type="int" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="IdPracownikaKasujacego" Type="int" />
+          <Property Name="DataCzasKasowania" Type="date" />
+          <Property Name="IdPracownikaDodajacego" Type="int" />
+          <Property Name="DataCzasDodania" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PozycjaWydaniaZewnetrznegoTowaru">
+          <Key>
+            <PropertyRef Name="IdPozycjiWydaniaZewnetrznego" />
+          </Key>
+          <Property Name="IdPozycjiWydaniaZewnetrznego" Type="int" Nullable="false" />
+          <Property Name="IdWydaniaZewnetrzenegoTowaru" Type="int" />
+          <Property Name="IdTowarJednostkiMiaryTowaru" Type="int" />
+          <Property Name="Ilosc" Type="float" />
+          <Property Name="IdLokalizacji" Type="int" />
+          <Property Name="IdPracownikaDodajacego" Type="int" />
+          <Property Name="DataCzasDodania" Type="date" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="IdPracownikaKasujacego" Type="int" />
+          <Property Name="DataCzasKasowania" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" />
+          <Property Name="IdProduktu" Type="int" />
+        </EntityType>
+        <EntityType Name="Pracownicy">
+          <Key>
+            <PropertyRef Name="IdPracownika" />
+          </Key>
+          <Property Name="IdPracownika" Type="int" Nullable="false" />
+          <Property Name="Imie" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nazwisko" Type="nvarchar" MaxLength="50" />
+          <Property Name="Login" Type="nvarchar" MaxLength="50" />
+          <Property Name="DataUrodzenia" Type="date" />
+          <Property Name="DataZatrudnienia" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PracownicyTask">
+          <Key>
+            <PropertyRef Name="IdPracownikaTask" />
+          </Key>
+          <Property Name="IdPracownikaTask" Type="int" Nullable="false" />
+          <Property Name="IdPracownika" Type="int" />
+          <Property Name="IdPracownikaPrzyjmujacego" Type="int" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="IdPracownikaKasujacego" Type="int" />
+          <Property Name="IdPracownikaDodajacego" Type="int" />
+          <Property Name="IdPracowmikaWystawiajacego" Type="int" />
+          <Property Name="IdPracownikaZatwierdzjacego" Type="int" />
+          <Property Name="IdPracownikaWydajacego" Type="int" />
+        </EntityType>
+        <EntityType Name="PrzyjecieZewnetrzneTowaru">
+          <Key>
+            <PropertyRef Name="IdPrzyjeciaZewnetrznego" />
+          </Key>
+          <Property Name="IdPrzyjeciaZewnetrznego" Type="int" Nullable="false" />
+          <Property Name="DataCzasPrzyjecia" Type="date" />
+          <Property Name="DataCzasZatwierdzenia" Type="date" />
+          <Property Name="IdPracownikaWystawiajacego" Type="int" />
+          <Property Name="IdPracownikaZatwierdzajacego" Type="int" />
+          <Property Name="IdPracownikaPrzyjmujacego" Type="int" />
+          <Property Name="IdKontrahenta" Type="int" />
+          <Property Name="IdZamowienia" Type="int" />
+          <Property Name="Numer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RodzajKontrahenta">
+          <Key>
+            <PropertyRef Name="IdRodzajKontrahenta" />
+          </Key>
+          <Property Name="IdRodzajKontrahenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazwa" Type="nchar" MaxLength="10" />
+          <Property Name="CzyAktywny" Type="bit" />
+        </EntityType>
+        <EntityType Name="StawkiVatZakupu">
+          <Key>
+            <PropertyRef Name="IdStawkiVatZakupu" />
+          </Key>
+          <Property Name="IdStawkiVatZakupu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nazwa" Type="nvarchar" MaxLength="50" />
+          <Property Name="Wartosc" Type="int" />
+          <Property Name="IdPracownikaDodajacego" Type="int" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasDodania" Type="date" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="CzyAktywny" Type="bit" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Towar">
+          <Key>
+            <PropertyRef Name="IdProduktu" />
+          </Key>
+          <Property Name="IdProduktu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kod" Type="int" />
+          <Property Name="IdKategorii" Type="int" />
+          <Property Name="Nazwa" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdPracownikaDodajacego" Type="int" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="IdPracownikaKasujacego" Type="int" />
+          <Property Name="DataCZasDodania" Type="date" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="DataCzasKasowania" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+          <Property Name="Ilosc" Type="int" />
+          <Property Name="IdPrzyjeciaZewnetrznego" Type="int" />
+        </EntityType>
+        <EntityType Name="TowarJednostkaMiaryTowaru">
+          <Key>
+            <PropertyRef Name="IdTowarJednostkiMiaryTowaru" />
+          </Key>
+          <Property Name="IdTowarJednostkiMiaryTowaru" Type="int" Nullable="false" />
+          <Property Name="IdProduktu" Type="int" />
+          <Property Name="IdJednostkiMiaryTowaru" Type="int" />
+          <Property Name="IdPracownikaDodajacego" Type="int" />
+          <Property Name="DataCzasDodania" Type="date" />
+          <Property Name="IdPracownikaModyfikujacego" Type="int" />
+          <Property Name="DataCzasModyfikacji" Type="date" />
+          <Property Name="IdPracownikaKasujacego" Type="int" />
+          <Property Name="DataCzasKasowania" Type="date" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="WydanieZewnetrzneTowaru">
+          <Key>
+            <PropertyRef Name="IdWydaniaZewnetrznegoTowaru" />
+          </Key>
+          <Property Name="IdWydaniaZewnetrznegoTowaru" Type="int" Nullable="false" />
+          <Property Name="DataCzasWydania" Type="date" />
+          <Property Name="DataCzasZatwierdzenia" Type="date" />
+          <Property Name="DataCzasOdebrania" Type="date" />
+          <Property Name="IdPracownikaWystawiajacego" Type="int" />
+          <Property Name="IdPracownikaZatwierdzajacego" Type="int" />
+          <Property Name="IdPracownikaWydajacego" Type="int" />
+          <Property Name="IdKontrahenta" Type="int" />
+          <Property Name="Numer" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdFaktury" Type="int" />
+          <Property Name="Uwagi" Type="nvarchar" MaxLength="50" />
+          <Property Name="CzyAktywny" Type="bit" />
+          <Property Name="IdProduktu" Type="int" />
+        </EntityType>
+        <EntityType Name="ZmianaCenyTowaru">
+          <Key>
+            <PropertyRef Name="IdZmianaCenyTowaru" />
+          </Key>
+          <Property Name="IdZmianaCenyTowaru" Type="int" Nullable="false" />
+          <Property Name="IdJednostkiMiaryTowaru" Type="int" />
+          <Property Name="DataCzasObowiazywaniaOd" Type="date" />
+          <Property Name="DataCzasObowiazywaniaDo" Type="date" />
+          <Property Name="CenaNettoSprzedazyTowaru" Type="int" />
+        </EntityType>
+        <Association Name="FK_Faktura_FormaPlatnosci">
+          <End Role="FormaPlatnosci" Type="Self.FormaPlatnosci" Multiplicity="0..1" />
+          <End Role="Faktura" Type="Self.Faktura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormaPlatnosci">
+              <PropertyRef Name="IdFormyPlatnosci" />
+            </Principal>
+            <Dependent Role="Faktura">
+              <PropertyRef Name="IdFormyPlatnosci" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Faktura_Kontrahent">
+          <End Role="Kontrahent" Type="Self.Kontrahent" Multiplicity="0..1" />
+          <End Role="Faktura" Type="Self.Faktura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kontrahent">
+              <PropertyRef Name="IdKontrahenta" />
+            </Principal>
+            <Dependent Role="Faktura">
+              <PropertyRef Name="IdKontrahenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kontrahent_Adres">
+          <End Role="Adres" Type="Self.Adres" Multiplicity="0..1" />
+          <End Role="Kontrahent" Type="Self.Kontrahent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adres">
+              <PropertyRef Name="IdAdresu" />
+            </Principal>
+            <Dependent Role="Kontrahent">
+              <PropertyRef Name="IdAdresu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kontrahent_RodzajKontrahenta">
+          <End Role="RodzajKontrahenta" Type="Self.RodzajKontrahenta" Multiplicity="0..1" />
+          <End Role="Kontrahent" Type="Self.Kontrahent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RodzajKontrahenta">
+              <PropertyRef Name="IdRodzajKontrahenta" />
+            </Principal>
+            <Dependent Role="Kontrahent">
+              <PropertyRef Name="IdRodzajKontrahenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru">
+          <End Role="PrzyjecieZewnetrzneTowaru" Type="Self.PrzyjecieZewnetrzneTowaru" Multiplicity="0..1" />
+          <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" Type="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PrzyjecieZewnetrzneTowaru">
+              <PropertyRef Name="IdPrzyjeciaZewnetrznego" />
+            </Principal>
+            <Dependent Role="PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <PropertyRef Name="IdPrzyjeciaZewnetrznego" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1">
+          <End Role="StawkiVatZakupu" Type="Self.StawkiVatZakupu" Multiplicity="0..1" />
+          <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" Type="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StawkiVatZakupu">
+              <PropertyRef Name="IdStawkiVatZakupu" />
+            </Principal>
+            <Dependent Role="PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <PropertyRef Name="IdStawkiVatZakupu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar">
+          <End Role="Towar" Type="Self.Towar" Multiplicity="0..1" />
+          <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" Type="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Towar">
+              <PropertyRef Name="IdProduktu" />
+            </Principal>
+            <Dependent Role="PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <PropertyRef Name="IdProduktu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaWydaniaZewnetrznego_Towar">
+          <End Role="Towar" Type="Self.Towar" Multiplicity="0..1" />
+          <End Role="PozycjaWydaniaZewnetrznegoTowaru" Type="Self.PozycjaWydaniaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Towar">
+              <PropertyRef Name="IdProduktu" />
+            </Principal>
+            <Dependent Role="PozycjaWydaniaZewnetrznegoTowaru">
+              <PropertyRef Name="IdProduktu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru">
+          <End Role="WydanieZewnetrzneTowaru" Type="Self.WydanieZewnetrzneTowaru" Multiplicity="0..1" />
+          <End Role="PozycjaWydaniaZewnetrznegoTowaru" Type="Self.PozycjaWydaniaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WydanieZewnetrzneTowaru">
+              <PropertyRef Name="IdWydaniaZewnetrznegoTowaru" />
+            </Principal>
+            <Dependent Role="PozycjaWydaniaZewnetrznegoTowaru">
+              <PropertyRef Name="IdWydaniaZewnetrzenegoTowaru" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PracownicyTask_Pracownicy1">
+          <End Role="Pracownicy" Type="Self.Pracownicy" Multiplicity="0..1" />
+          <End Role="PracownicyTask" Type="Self.PracownicyTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pracownicy">
+              <PropertyRef Name="IdPracownika" />
+            </Principal>
+            <Dependent Role="PracownicyTask">
+              <PropertyRef Name="IdPracownika" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PrzyjecieZewnetrzneTowaru_PracownicyTask">
+          <End Role="PracownicyTask" Type="Self.PracownicyTask" Multiplicity="0..1" />
+          <End Role="PrzyjecieZewnetrzneTowaru" Type="Self.PrzyjecieZewnetrzneTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PracownicyTask">
+              <PropertyRef Name="IdPracownikaTask" />
+            </Principal>
+            <Dependent Role="PrzyjecieZewnetrzneTowaru">
+              <PropertyRef Name="IdPracownikaWystawiajacego" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru">
+          <End Role="JednostkaMiaryTowaru" Type="Self.JednostkaMiaryTowaru" Multiplicity="0..1" />
+          <End Role="TowarJednostkaMiaryTowaru" Type="Self.TowarJednostkaMiaryTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JednostkaMiaryTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Principal>
+            <Dependent Role="TowarJednostkaMiaryTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TowarJednostkaMiaryTowaru_Towar">
+          <End Role="Towar" Type="Self.Towar" Multiplicity="0..1" />
+          <End Role="TowarJednostkaMiaryTowaru" Type="Self.TowarJednostkaMiaryTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Towar">
+              <PropertyRef Name="IdProduktu" />
+            </Principal>
+            <Dependent Role="TowarJednostkaMiaryTowaru">
+              <PropertyRef Name="IdProduktu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WydanieZewnetrzneTowaru_Faktura">
+          <End Role="Faktura" Type="Self.Faktura" Multiplicity="0..1" />
+          <End Role="WydanieZewnetrzneTowaru" Type="Self.WydanieZewnetrzneTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faktura">
+              <PropertyRef Name="IdFaktury" />
+            </Principal>
+            <Dependent Role="WydanieZewnetrzneTowaru">
+              <PropertyRef Name="IdFaktury" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ZmianaCenyTowaru_JednostkaMiaryTowaru">
+          <End Role="JednostkaMiaryTowaru" Type="Self.JednostkaMiaryTowaru" Multiplicity="0..1" />
+          <End Role="ZmianaCenyTowaru" Type="Self.ZmianaCenyTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JednostkaMiaryTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Principal>
+            <Dependent Role="ZmianaCenyTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PDABModel1StoreContainer">
+          <EntitySet Name="Adres" EntityType="Self.Adres" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Faktura" EntityType="Self.Faktura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FormaPlatnosci" EntityType="Self.FormaPlatnosci" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JednostkaMiaryTowaru" EntityType="Self.JednostkaMiaryTowaru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kontrahent" EntityType="Self.Kontrahent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PozycjaPrzyjeciaZewnetrznegoTowaru" EntityType="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PozycjaWydaniaZewnetrznegoTowaru" EntityType="Self.PozycjaWydaniaZewnetrznegoTowaru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pracownicy" EntityType="Self.Pracownicy" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PracownicyTask" EntityType="Self.PracownicyTask" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PrzyjecieZewnetrzneTowaru" EntityType="Self.PrzyjecieZewnetrzneTowaru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RodzajKontrahenta" EntityType="Self.RodzajKontrahenta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StawkiVatZakupu" EntityType="Self.StawkiVatZakupu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Towar" EntityType="Self.Towar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TowarJednostkaMiaryTowaru" EntityType="Self.TowarJednostkaMiaryTowaru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WydanieZewnetrzneTowaru" EntityType="Self.WydanieZewnetrzneTowaru" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ZmianaCenyTowaru" EntityType="Self.ZmianaCenyTowaru" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Faktura_FormaPlatnosci" Association="Self.FK_Faktura_FormaPlatnosci">
+            <End Role="FormaPlatnosci" EntitySet="FormaPlatnosci" />
+            <End Role="Faktura" EntitySet="Faktura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Faktura_Kontrahent" Association="Self.FK_Faktura_Kontrahent">
+            <End Role="Kontrahent" EntitySet="Kontrahent" />
+            <End Role="Faktura" EntitySet="Faktura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kontrahent_Adres" Association="Self.FK_Kontrahent_Adres">
+            <End Role="Adres" EntitySet="Adres" />
+            <End Role="Kontrahent" EntitySet="Kontrahent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kontrahent_RodzajKontrahenta" Association="Self.FK_Kontrahent_RodzajKontrahenta">
+            <End Role="RodzajKontrahenta" EntitySet="RodzajKontrahenta" />
+            <End Role="Kontrahent" EntitySet="Kontrahent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru" Association="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru">
+            <End Role="PrzyjecieZewnetrzneTowaru" EntitySet="PrzyjecieZewnetrzneTowaru" />
+            <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" EntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1" Association="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1">
+            <End Role="StawkiVatZakupu" EntitySet="StawkiVatZakupu" />
+            <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" EntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar" Association="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar">
+            <End Role="Towar" EntitySet="Towar" />
+            <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" EntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaWydaniaZewnetrznego_Towar" Association="Self.FK_PozycjaWydaniaZewnetrznego_Towar">
+            <End Role="Towar" EntitySet="Towar" />
+            <End Role="PozycjaWydaniaZewnetrznegoTowaru" EntitySet="PozycjaWydaniaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru" Association="Self.FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru">
+            <End Role="WydanieZewnetrzneTowaru" EntitySet="WydanieZewnetrzneTowaru" />
+            <End Role="PozycjaWydaniaZewnetrznegoTowaru" EntitySet="PozycjaWydaniaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PracownicyTask_Pracownicy1" Association="Self.FK_PracownicyTask_Pracownicy1">
+            <End Role="Pracownicy" EntitySet="Pracownicy" />
+            <End Role="PracownicyTask" EntitySet="PracownicyTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PrzyjecieZewnetrzneTowaru_PracownicyTask" Association="Self.FK_PrzyjecieZewnetrzneTowaru_PracownicyTask">
+            <End Role="PracownicyTask" EntitySet="PracownicyTask" />
+            <End Role="PrzyjecieZewnetrzneTowaru" EntitySet="PrzyjecieZewnetrzneTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru" Association="Self.FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru">
+            <End Role="JednostkaMiaryTowaru" EntitySet="JednostkaMiaryTowaru" />
+            <End Role="TowarJednostkaMiaryTowaru" EntitySet="TowarJednostkaMiaryTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TowarJednostkaMiaryTowaru_Towar" Association="Self.FK_TowarJednostkaMiaryTowaru_Towar">
+            <End Role="Towar" EntitySet="Towar" />
+            <End Role="TowarJednostkaMiaryTowaru" EntitySet="TowarJednostkaMiaryTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WydanieZewnetrzneTowaru_Faktura" Association="Self.FK_WydanieZewnetrzneTowaru_Faktura">
+            <End Role="Faktura" EntitySet="Faktura" />
+            <End Role="WydanieZewnetrzneTowaru" EntitySet="WydanieZewnetrzneTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ZmianaCenyTowaru_JednostkaMiaryTowaru" Association="Self.FK_ZmianaCenyTowaru_JednostkaMiaryTowaru">
+            <End Role="JednostkaMiaryTowaru" EntitySet="JednostkaMiaryTowaru" />
+            <End Role="ZmianaCenyTowaru" EntitySet="ZmianaCenyTowaru" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PDABModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Adres">
+          <Key>
+            <PropertyRef Name="IdAdresu" />
+          </Key>
+          <Property Name="IdAdresu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Miejscowosc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ulica" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NrDomu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NrLokalu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Miasto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Poczta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Kontrahent" Relationship="Self.FK_Kontrahent_Adres" FromRole="Adres" ToRole="Kontrahent" />
+        </EntityType>
+        <EntityType Name="Faktura">
+          <Key>
+            <PropertyRef Name="IdFaktury" />
+          </Key>
+          <Property Name="IdFaktury" Type="Int32" Nullable="false" />
+          <Property Name="Numer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DataCzasWystawienia" Type="DateTime" Precision="0" />
+          <Property Name="IdLokazlizacji" Type="Int32" />
+          <Property Name="IdKontrahenta" Type="Int32" />
+          <Property Name="IdStanu" Type="Int32" />
+          <Property Name="Rabat" Type="Int32" />
+          <Property Name="IdFormyPlatnosci" Type="Int32" />
+          <Property Name="IdRachunku" Type="Int32" />
+          <Property Name="DataCzasZaksiegowania" Type="DateTime" Precision="0" />
+          <Property Name="TerminPlatnosci" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaWystawiajacego" Type="Int32" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="FormaPlatnosci" Relationship="Self.FK_Faktura_FormaPlatnosci" FromRole="Faktura" ToRole="FormaPlatnosci" />
+          <NavigationProperty Name="Kontrahent" Relationship="Self.FK_Faktura_Kontrahent" FromRole="Faktura" ToRole="Kontrahent" />
+          <NavigationProperty Name="WydanieZewnetrzneTowaru" Relationship="Self.FK_WydanieZewnetrzneTowaru_Faktura" FromRole="Faktura" ToRole="WydanieZewnetrzneTowaru" />
+        </EntityType>
+        <EntityType Name="FormaPlatnosci">
+          <Key>
+            <PropertyRef Name="IdFormyPlatnosci" />
+          </Key>
+          <Property Name="IdFormyPlatnosci" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Faktura" Relationship="Self.FK_Faktura_FormaPlatnosci" FromRole="FormaPlatnosci" ToRole="Faktura" />
+        </EntityType>
+        <EntityType Name="JednostkaMiaryTowaru">
+          <Key>
+            <PropertyRef Name="IdJednostkiMiaryTowaru" />
+          </Key>
+          <Property Name="IdJednostkiMiaryTowaru" Type="Int32" Nullable="false" />
+          <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Opis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Parametry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TowarJednostkaMiaryTowaru" Relationship="Self.FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru" FromRole="JednostkaMiaryTowaru" ToRole="TowarJednostkaMiaryTowaru" />
+          <NavigationProperty Name="ZmianaCenyTowaru" Relationship="Self.FK_ZmianaCenyTowaru_JednostkaMiaryTowaru" FromRole="JednostkaMiaryTowaru" ToRole="ZmianaCenyTowaru" />
+        </EntityType>
+        <EntityType Name="Kontrahent">
+          <Key>
+            <PropertyRef Name="IdKontrahenta" />
+          </Key>
+          <Property Name="IdKontrahenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdRodzajKontrahenta" Type="Int32" />
+          <Property Name="IdAdresu" Type="Int32" />
+          <Property Name="NIP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="REGON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TelefonKomorkowy1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TelefonKomorkowy2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Adres" Relationship="Self.FK_Kontrahent_Adres" FromRole="Kontrahent" ToRole="Adres" />
+          <NavigationProperty Name="Faktura" Relationship="Self.FK_Faktura_Kontrahent" FromRole="Kontrahent" ToRole="Faktura" />
+          <NavigationProperty Name="RodzajKontrahenta" Relationship="Self.FK_Kontrahent_RodzajKontrahenta" FromRole="Kontrahent" ToRole="RodzajKontrahenta" />
+        </EntityType>
+        <EntityType Name="PozycjaPrzyjeciaZewnetrznegoTowaru">
+          <Key>
+            <PropertyRef Name="IdPozycjiPrzyjeciaZewnetrznegoTowaru" />
+          </Key>
+          <Property Name="IdPozycjiPrzyjeciaZewnetrznegoTowaru" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPrzyjeciaZewnetrznego" Type="Int32" />
+          <Property Name="IdProduktu" Type="Int32" />
+          <Property Name="IdTowarJednostkiMiaryTowaru" Type="Int32" />
+          <Property Name="Ilosc" Type="Int32" />
+          <Property Name="CenaNettoZakupu" Type="Double" />
+          <Property Name="IdStawkiVatZakupu" Type="Int32" />
+          <Property Name="IdLokalizacji" Type="Int32" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaKasujacego" Type="Int32" />
+          <Property Name="DataCzasKasowania" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaDodajacego" Type="Int32" />
+          <Property Name="DataCzasDodania" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PrzyjecieZewnetrzneTowaru" Relationship="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru" FromRole="PozycjaPrzyjeciaZewnetrznegoTowaru" ToRole="PrzyjecieZewnetrzneTowaru" />
+          <NavigationProperty Name="StawkiVatZakupu" Relationship="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1" FromRole="PozycjaPrzyjeciaZewnetrznegoTowaru" ToRole="StawkiVatZakupu" />
+          <NavigationProperty Name="Towar" Relationship="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar" FromRole="PozycjaPrzyjeciaZewnetrznegoTowaru" ToRole="Towar" />
+        </EntityType>
+        <EntityType Name="PozycjaWydaniaZewnetrznegoTowaru">
+          <Key>
+            <PropertyRef Name="IdPozycjiWydaniaZewnetrznego" />
+          </Key>
+          <Property Name="IdPozycjiWydaniaZewnetrznego" Type="Int32" Nullable="false" />
+          <Property Name="IdWydaniaZewnetrzenegoTowaru" Type="Int32" />
+          <Property Name="IdTowarJednostkiMiaryTowaru" Type="Int32" />
+          <Property Name="Ilosc" Type="Double" />
+          <Property Name="IdLokalizacji" Type="Int32" />
+          <Property Name="IdPracownikaDodajacego" Type="Int32" />
+          <Property Name="DataCzasDodania" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaKasujacego" Type="Int32" />
+          <Property Name="DataCzasKasowania" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" />
+          <Property Name="IdProduktu" Type="Int32" />
+          <NavigationProperty Name="Towar" Relationship="Self.FK_PozycjaWydaniaZewnetrznego_Towar" FromRole="PozycjaWydaniaZewnetrznegoTowaru" ToRole="Towar" />
+          <NavigationProperty Name="WydanieZewnetrzneTowaru" Relationship="Self.FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru" FromRole="PozycjaWydaniaZewnetrznegoTowaru" ToRole="WydanieZewnetrzneTowaru" />
+        </EntityType>
+        <EntityType Name="Pracownicy">
+          <Key>
+            <PropertyRef Name="IdPracownika" />
+          </Key>
+          <Property Name="IdPracownika" Type="Int32" Nullable="false" />
+          <Property Name="Imie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nazwisko" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DataUrodzenia" Type="DateTime" Precision="0" />
+          <Property Name="DataZatrudnienia" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PracownicyTask" Relationship="Self.FK_PracownicyTask_Pracownicy1" FromRole="Pracownicy" ToRole="PracownicyTask" />
+        </EntityType>
+        <EntityType Name="PracownicyTask">
+          <Key>
+            <PropertyRef Name="IdPracownikaTask" />
+          </Key>
+          <Property Name="IdPracownikaTask" Type="Int32" Nullable="false" />
+          <Property Name="IdPracownika" Type="Int32" />
+          <Property Name="IdPracownikaPrzyjmujacego" Type="Int32" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="IdPracownikaKasujacego" Type="Int32" />
+          <Property Name="IdPracownikaDodajacego" Type="Int32" />
+          <Property Name="IdPracowmikaWystawiajacego" Type="Int32" />
+          <Property Name="IdPracownikaZatwierdzjacego" Type="Int32" />
+          <Property Name="IdPracownikaWydajacego" Type="Int32" />
+          <NavigationProperty Name="Pracownicy" Relationship="Self.FK_PracownicyTask_Pracownicy1" FromRole="PracownicyTask" ToRole="Pracownicy" />
+          <NavigationProperty Name="PrzyjecieZewnetrzneTowaru" Relationship="Self.FK_PrzyjecieZewnetrzneTowaru_PracownicyTask" FromRole="PracownicyTask" ToRole="PrzyjecieZewnetrzneTowaru" />
+        </EntityType>
+        <EntityType Name="PrzyjecieZewnetrzneTowaru">
+          <Key>
+            <PropertyRef Name="IdPrzyjeciaZewnetrznego" />
+          </Key>
+          <Property Name="IdPrzyjeciaZewnetrznego" Type="Int32" Nullable="false" />
+          <Property Name="DataCzasPrzyjecia" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasZatwierdzenia" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaWystawiajacego" Type="Int32" />
+          <Property Name="IdPracownikaZatwierdzajacego" Type="Int32" />
+          <Property Name="IdPracownikaPrzyjmujacego" Type="Int32" />
+          <Property Name="IdKontrahenta" Type="Int32" />
+          <Property Name="IdZamowienia" Type="Int32" />
+          <Property Name="Numer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PozycjaPrzyjeciaZewnetrznegoTowaru" Relationship="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru" FromRole="PrzyjecieZewnetrzneTowaru" ToRole="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          <NavigationProperty Name="PracownicyTask" Relationship="Self.FK_PrzyjecieZewnetrzneTowaru_PracownicyTask" FromRole="PrzyjecieZewnetrzneTowaru" ToRole="PracownicyTask" />
+        </EntityType>
+        <EntityType Name="RodzajKontrahenta">
+          <Key>
+            <PropertyRef Name="IdRodzajKontrahenta" />
+          </Key>
+          <Property Name="IdRodzajKontrahenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazwa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" />
+          <NavigationProperty Name="Kontrahent" Relationship="Self.FK_Kontrahent_RodzajKontrahenta" FromRole="RodzajKontrahenta" ToRole="Kontrahent" />
+        </EntityType>
+        <EntityType Name="StawkiVatZakupu">
+          <Key>
+            <PropertyRef Name="IdStawkiVatZakupu" />
+          </Key>
+          <Property Name="IdStawkiVatZakupu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Wartosc" Type="Int32" />
+          <Property Name="IdPracownikaDodajacego" Type="Int32" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasDodania" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="CzyAktywny" Type="Boolean" />
+          <NavigationProperty Name="PozycjaPrzyjeciaZewnetrznegoTowaru" Relationship="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1" FromRole="StawkiVatZakupu" ToRole="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Towar">
+          <Key>
+            <PropertyRef Name="IdProduktu" />
+          </Key>
+          <Property Name="IdProduktu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kod" Type="Int32" />
+          <Property Name="IdKategorii" Type="Int32" />
+          <Property Name="Nazwa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdPracownikaDodajacego" Type="Int32" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="IdPracownikaKasujacego" Type="Int32" />
+          <Property Name="DataCZasDodania" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasKasowania" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <Property Name="Ilosc" Type="Int32" />
+          <Property Name="IdPrzyjeciaZewnetrznego" Type="Int32" />
+          <NavigationProperty Name="PozycjaPrzyjeciaZewnetrznegoTowaru" Relationship="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar" FromRole="Towar" ToRole="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          <NavigationProperty Name="PozycjaWydaniaZewnetrznegoTowaru" Relationship="Self.FK_PozycjaWydaniaZewnetrznego_Towar" FromRole="Towar" ToRole="PozycjaWydaniaZewnetrznegoTowaru" />
+          <NavigationProperty Name="TowarJednostkaMiaryTowaru" Relationship="Self.FK_TowarJednostkaMiaryTowaru_Towar" FromRole="Towar" ToRole="TowarJednostkaMiaryTowaru" />
+        </EntityType>
+        <EntityType Name="TowarJednostkaMiaryTowaru">
+          <Key>
+            <PropertyRef Name="IdTowarJednostkiMiaryTowaru" />
+          </Key>
+          <Property Name="IdTowarJednostkiMiaryTowaru" Type="Int32" Nullable="false" />
+          <Property Name="IdProduktu" Type="Int32" />
+          <Property Name="IdJednostkiMiaryTowaru" Type="Int32" />
+          <Property Name="IdPracownikaDodajacego" Type="Int32" />
+          <Property Name="DataCzasDodania" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaModyfikujacego" Type="Int32" />
+          <Property Name="DataCzasModyfikacji" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaKasujacego" Type="Int32" />
+          <Property Name="DataCzasKasowania" Type="DateTime" Precision="0" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="JednostkaMiaryTowaru" Relationship="Self.FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru" FromRole="TowarJednostkaMiaryTowaru" ToRole="JednostkaMiaryTowaru" />
+          <NavigationProperty Name="Towar" Relationship="Self.FK_TowarJednostkaMiaryTowaru_Towar" FromRole="TowarJednostkaMiaryTowaru" ToRole="Towar" />
+        </EntityType>
+        <EntityType Name="WydanieZewnetrzneTowaru">
+          <Key>
+            <PropertyRef Name="IdWydaniaZewnetrznegoTowaru" />
+          </Key>
+          <Property Name="IdWydaniaZewnetrznegoTowaru" Type="Int32" Nullable="false" />
+          <Property Name="DataCzasWydania" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasZatwierdzenia" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasOdebrania" Type="DateTime" Precision="0" />
+          <Property Name="IdPracownikaWystawiajacego" Type="Int32" />
+          <Property Name="IdPracownikaZatwierdzajacego" Type="Int32" />
+          <Property Name="IdPracownikaWydajacego" Type="Int32" />
+          <Property Name="IdKontrahenta" Type="Int32" />
+          <Property Name="Numer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdFaktury" Type="Int32" />
+          <Property Name="Uwagi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CzyAktywny" Type="Boolean" />
+          <Property Name="IdProduktu" Type="Int32" />
+          <NavigationProperty Name="Faktura" Relationship="Self.FK_WydanieZewnetrzneTowaru_Faktura" FromRole="WydanieZewnetrzneTowaru" ToRole="Faktura" />
+          <NavigationProperty Name="PozycjaWydaniaZewnetrznegoTowaru" Relationship="Self.FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru" FromRole="WydanieZewnetrzneTowaru" ToRole="PozycjaWydaniaZewnetrznegoTowaru" />
+        </EntityType>
+        <EntityType Name="ZmianaCenyTowaru">
+          <Key>
+            <PropertyRef Name="IdZmianaCenyTowaru" />
+          </Key>
+          <Property Name="IdZmianaCenyTowaru" Type="Int32" Nullable="false" />
+          <Property Name="IdJednostkiMiaryTowaru" Type="Int32" />
+          <Property Name="DataCzasObowiazywaniaOd" Type="DateTime" Precision="0" />
+          <Property Name="DataCzasObowiazywaniaDo" Type="DateTime" Precision="0" />
+          <Property Name="CenaNettoSprzedazyTowaru" Type="Int32" />
+          <NavigationProperty Name="JednostkaMiaryTowaru" Relationship="Self.FK_ZmianaCenyTowaru_JednostkaMiaryTowaru" FromRole="ZmianaCenyTowaru" ToRole="JednostkaMiaryTowaru" />
+        </EntityType>
+        <Association Name="FK_Kontrahent_Adres">
+          <End Role="Adres" Type="Self.Adres" Multiplicity="0..1" />
+          <End Role="Kontrahent" Type="Self.Kontrahent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adres">
+              <PropertyRef Name="IdAdresu" />
+            </Principal>
+            <Dependent Role="Kontrahent">
+              <PropertyRef Name="IdAdresu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Faktura_FormaPlatnosci">
+          <End Role="FormaPlatnosci" Type="Self.FormaPlatnosci" Multiplicity="0..1" />
+          <End Role="Faktura" Type="Self.Faktura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormaPlatnosci">
+              <PropertyRef Name="IdFormyPlatnosci" />
+            </Principal>
+            <Dependent Role="Faktura">
+              <PropertyRef Name="IdFormyPlatnosci" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Faktura_Kontrahent">
+          <End Role="Kontrahent" Type="Self.Kontrahent" Multiplicity="0..1" />
+          <End Role="Faktura" Type="Self.Faktura" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kontrahent">
+              <PropertyRef Name="IdKontrahenta" />
+            </Principal>
+            <Dependent Role="Faktura">
+              <PropertyRef Name="IdKontrahenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WydanieZewnetrzneTowaru_Faktura">
+          <End Role="Faktura" Type="Self.Faktura" Multiplicity="0..1" />
+          <End Role="WydanieZewnetrzneTowaru" Type="Self.WydanieZewnetrzneTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faktura">
+              <PropertyRef Name="IdFaktury" />
+            </Principal>
+            <Dependent Role="WydanieZewnetrzneTowaru">
+              <PropertyRef Name="IdFaktury" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru">
+          <End Role="JednostkaMiaryTowaru" Type="Self.JednostkaMiaryTowaru" Multiplicity="0..1" />
+          <End Role="TowarJednostkaMiaryTowaru" Type="Self.TowarJednostkaMiaryTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JednostkaMiaryTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Principal>
+            <Dependent Role="TowarJednostkaMiaryTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ZmianaCenyTowaru_JednostkaMiaryTowaru">
+          <End Role="JednostkaMiaryTowaru" Type="Self.JednostkaMiaryTowaru" Multiplicity="0..1" />
+          <End Role="ZmianaCenyTowaru" Type="Self.ZmianaCenyTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JednostkaMiaryTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Principal>
+            <Dependent Role="ZmianaCenyTowaru">
+              <PropertyRef Name="IdJednostkiMiaryTowaru" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kontrahent_RodzajKontrahenta">
+          <End Role="RodzajKontrahenta" Type="Self.RodzajKontrahenta" Multiplicity="0..1" />
+          <End Role="Kontrahent" Type="Self.Kontrahent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RodzajKontrahenta">
+              <PropertyRef Name="IdRodzajKontrahenta" />
+            </Principal>
+            <Dependent Role="Kontrahent">
+              <PropertyRef Name="IdRodzajKontrahenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru">
+          <End Role="PrzyjecieZewnetrzneTowaru" Type="Self.PrzyjecieZewnetrzneTowaru" Multiplicity="0..1" />
+          <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" Type="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PrzyjecieZewnetrzneTowaru">
+              <PropertyRef Name="IdPrzyjeciaZewnetrznego" />
+            </Principal>
+            <Dependent Role="PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <PropertyRef Name="IdPrzyjeciaZewnetrznego" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1">
+          <End Role="StawkiVatZakupu" Type="Self.StawkiVatZakupu" Multiplicity="0..1" />
+          <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" Type="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StawkiVatZakupu">
+              <PropertyRef Name="IdStawkiVatZakupu" />
+            </Principal>
+            <Dependent Role="PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <PropertyRef Name="IdStawkiVatZakupu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar">
+          <End Role="Towar" Type="Self.Towar" Multiplicity="0..1" />
+          <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" Type="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Towar">
+              <PropertyRef Name="IdProduktu" />
+            </Principal>
+            <Dependent Role="PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <PropertyRef Name="IdProduktu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaWydaniaZewnetrznego_Towar">
+          <End Role="Towar" Type="Self.Towar" Multiplicity="0..1" />
+          <End Role="PozycjaWydaniaZewnetrznegoTowaru" Type="Self.PozycjaWydaniaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Towar">
+              <PropertyRef Name="IdProduktu" />
+            </Principal>
+            <Dependent Role="PozycjaWydaniaZewnetrznegoTowaru">
+              <PropertyRef Name="IdProduktu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru">
+          <End Role="WydanieZewnetrzneTowaru" Type="Self.WydanieZewnetrzneTowaru" Multiplicity="0..1" />
+          <End Role="PozycjaWydaniaZewnetrznegoTowaru" Type="Self.PozycjaWydaniaZewnetrznegoTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WydanieZewnetrzneTowaru">
+              <PropertyRef Name="IdWydaniaZewnetrznegoTowaru" />
+            </Principal>
+            <Dependent Role="PozycjaWydaniaZewnetrznegoTowaru">
+              <PropertyRef Name="IdWydaniaZewnetrzenegoTowaru" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PracownicyTask_Pracownicy1">
+          <End Role="Pracownicy" Type="Self.Pracownicy" Multiplicity="0..1" />
+          <End Role="PracownicyTask" Type="Self.PracownicyTask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pracownicy">
+              <PropertyRef Name="IdPracownika" />
+            </Principal>
+            <Dependent Role="PracownicyTask">
+              <PropertyRef Name="IdPracownika" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PrzyjecieZewnetrzneTowaru_PracownicyTask">
+          <End Role="PracownicyTask" Type="Self.PracownicyTask" Multiplicity="0..1" />
+          <End Role="PrzyjecieZewnetrzneTowaru" Type="Self.PrzyjecieZewnetrzneTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PracownicyTask">
+              <PropertyRef Name="IdPracownikaTask" />
+            </Principal>
+            <Dependent Role="PrzyjecieZewnetrzneTowaru">
+              <PropertyRef Name="IdPracownikaWystawiajacego" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TowarJednostkaMiaryTowaru_Towar">
+          <End Role="Towar" Type="Self.Towar" Multiplicity="0..1" />
+          <End Role="TowarJednostkaMiaryTowaru" Type="Self.TowarJednostkaMiaryTowaru" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Towar">
+              <PropertyRef Name="IdProduktu" />
+            </Principal>
+            <Dependent Role="TowarJednostkaMiaryTowaru">
+              <PropertyRef Name="IdProduktu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PDABEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Adres" EntityType="Self.Adres" />
+          <EntitySet Name="Faktura" EntityType="Self.Faktura" />
+          <EntitySet Name="FormaPlatnosci" EntityType="Self.FormaPlatnosci" />
+          <EntitySet Name="JednostkaMiaryTowaru" EntityType="Self.JednostkaMiaryTowaru" />
+          <EntitySet Name="Kontrahent" EntityType="Self.Kontrahent" />
+          <EntitySet Name="PozycjaPrzyjeciaZewnetrznegoTowaru" EntityType="Self.PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          <EntitySet Name="PozycjaWydaniaZewnetrznegoTowaru" EntityType="Self.PozycjaWydaniaZewnetrznegoTowaru" />
+          <EntitySet Name="Pracownicy" EntityType="Self.Pracownicy" />
+          <EntitySet Name="PracownicyTask" EntityType="Self.PracownicyTask" />
+          <EntitySet Name="PrzyjecieZewnetrzneTowaru" EntityType="Self.PrzyjecieZewnetrzneTowaru" />
+          <EntitySet Name="RodzajKontrahenta" EntityType="Self.RodzajKontrahenta" />
+          <EntitySet Name="StawkiVatZakupu" EntityType="Self.StawkiVatZakupu" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Towar" EntityType="Self.Towar" />
+          <EntitySet Name="TowarJednostkaMiaryTowaru" EntityType="Self.TowarJednostkaMiaryTowaru" />
+          <EntitySet Name="WydanieZewnetrzneTowaru" EntityType="Self.WydanieZewnetrzneTowaru" />
+          <EntitySet Name="ZmianaCenyTowaru" EntityType="Self.ZmianaCenyTowaru" />
+          <AssociationSet Name="FK_Kontrahent_Adres" Association="Self.FK_Kontrahent_Adres">
+            <End Role="Adres" EntitySet="Adres" />
+            <End Role="Kontrahent" EntitySet="Kontrahent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Faktura_FormaPlatnosci" Association="Self.FK_Faktura_FormaPlatnosci">
+            <End Role="FormaPlatnosci" EntitySet="FormaPlatnosci" />
+            <End Role="Faktura" EntitySet="Faktura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Faktura_Kontrahent" Association="Self.FK_Faktura_Kontrahent">
+            <End Role="Kontrahent" EntitySet="Kontrahent" />
+            <End Role="Faktura" EntitySet="Faktura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WydanieZewnetrzneTowaru_Faktura" Association="Self.FK_WydanieZewnetrzneTowaru_Faktura">
+            <End Role="Faktura" EntitySet="Faktura" />
+            <End Role="WydanieZewnetrzneTowaru" EntitySet="WydanieZewnetrzneTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru" Association="Self.FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru">
+            <End Role="JednostkaMiaryTowaru" EntitySet="JednostkaMiaryTowaru" />
+            <End Role="TowarJednostkaMiaryTowaru" EntitySet="TowarJednostkaMiaryTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ZmianaCenyTowaru_JednostkaMiaryTowaru" Association="Self.FK_ZmianaCenyTowaru_JednostkaMiaryTowaru">
+            <End Role="JednostkaMiaryTowaru" EntitySet="JednostkaMiaryTowaru" />
+            <End Role="ZmianaCenyTowaru" EntitySet="ZmianaCenyTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kontrahent_RodzajKontrahenta" Association="Self.FK_Kontrahent_RodzajKontrahenta">
+            <End Role="RodzajKontrahenta" EntitySet="RodzajKontrahenta" />
+            <End Role="Kontrahent" EntitySet="Kontrahent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru" Association="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru">
+            <End Role="PrzyjecieZewnetrzneTowaru" EntitySet="PrzyjecieZewnetrzneTowaru" />
+            <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" EntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1" Association="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1">
+            <End Role="StawkiVatZakupu" EntitySet="StawkiVatZakupu" />
+            <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" EntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar" Association="Self.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar">
+            <End Role="Towar" EntitySet="Towar" />
+            <End Role="PozycjaPrzyjeciaZewnetrznegoTowaru" EntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaWydaniaZewnetrznego_Towar" Association="Self.FK_PozycjaWydaniaZewnetrznego_Towar">
+            <End Role="Towar" EntitySet="Towar" />
+            <End Role="PozycjaWydaniaZewnetrznegoTowaru" EntitySet="PozycjaWydaniaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru" Association="Self.FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru">
+            <End Role="WydanieZewnetrzneTowaru" EntitySet="WydanieZewnetrzneTowaru" />
+            <End Role="PozycjaWydaniaZewnetrznegoTowaru" EntitySet="PozycjaWydaniaZewnetrznegoTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PracownicyTask_Pracownicy1" Association="Self.FK_PracownicyTask_Pracownicy1">
+            <End Role="Pracownicy" EntitySet="Pracownicy" />
+            <End Role="PracownicyTask" EntitySet="PracownicyTask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PrzyjecieZewnetrzneTowaru_PracownicyTask" Association="Self.FK_PrzyjecieZewnetrzneTowaru_PracownicyTask">
+            <End Role="PracownicyTask" EntitySet="PracownicyTask" />
+            <End Role="PrzyjecieZewnetrzneTowaru" EntitySet="PrzyjecieZewnetrzneTowaru" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TowarJednostkaMiaryTowaru_Towar" Association="Self.FK_TowarJednostkaMiaryTowaru_Towar">
+            <End Role="Towar" EntitySet="Towar" />
+            <End Role="TowarJednostkaMiaryTowaru" EntitySet="TowarJednostkaMiaryTowaru" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PDABModel1StoreContainer" CdmEntityContainer="PDABEntities1">
+          <EntitySetMapping Name="Adres">
+            <EntityTypeMapping TypeName="PDABModel1.Adres">
+              <MappingFragment StoreEntitySet="Adres">
+                <ScalarProperty Name="IdAdresu" ColumnName="IdAdresu" />
+                <ScalarProperty Name="Miejscowosc" ColumnName="Miejscowosc" />
+                <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+                <ScalarProperty Name="NrDomu" ColumnName="NrDomu" />
+                <ScalarProperty Name="NrLokalu" ColumnName="NrLokalu" />
+                <ScalarProperty Name="Kod" ColumnName="Kod" />
+                <ScalarProperty Name="Miasto" ColumnName="Miasto" />
+                <ScalarProperty Name="Poczta" ColumnName="Poczta" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Faktura">
+            <EntityTypeMapping TypeName="PDABModel1.Faktura">
+              <MappingFragment StoreEntitySet="Faktura">
+                <ScalarProperty Name="IdFaktury" ColumnName="IdFaktury" />
+                <ScalarProperty Name="Numer" ColumnName="Numer" />
+                <ScalarProperty Name="DataCzasWystawienia" ColumnName="DataCzasWystawienia" />
+                <ScalarProperty Name="IdLokazlizacji" ColumnName="IdLokazlizacji" />
+                <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+                <ScalarProperty Name="IdStanu" ColumnName="IdStanu" />
+                <ScalarProperty Name="Rabat" ColumnName="Rabat" />
+                <ScalarProperty Name="IdFormyPlatnosci" ColumnName="IdFormyPlatnosci" />
+                <ScalarProperty Name="IdRachunku" ColumnName="IdRachunku" />
+                <ScalarProperty Name="DataCzasZaksiegowania" ColumnName="DataCzasZaksiegowania" />
+                <ScalarProperty Name="TerminPlatnosci" ColumnName="TerminPlatnosci" />
+                <ScalarProperty Name="IdPracownikaWystawiajacego" ColumnName="IdPracownikaWystawiajacego" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FormaPlatnosci">
+            <EntityTypeMapping TypeName="PDABModel1.FormaPlatnosci">
+              <MappingFragment StoreEntitySet="FormaPlatnosci">
+                <ScalarProperty Name="IdFormyPlatnosci" ColumnName="IdFormyPlatnosci" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JednostkaMiaryTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.JednostkaMiaryTowaru">
+              <MappingFragment StoreEntitySet="JednostkaMiaryTowaru">
+                <ScalarProperty Name="IdJednostkiMiaryTowaru" ColumnName="IdJednostkiMiaryTowaru" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="Opis" ColumnName="Opis" />
+                <ScalarProperty Name="Parametry" ColumnName="Parametry" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kontrahent">
+            <EntityTypeMapping TypeName="PDABModel1.Kontrahent">
+              <MappingFragment StoreEntitySet="Kontrahent">
+                <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="IdRodzajKontrahenta" ColumnName="IdRodzajKontrahenta" />
+                <ScalarProperty Name="IdAdresu" ColumnName="IdAdresu" />
+                <ScalarProperty Name="NIP" ColumnName="NIP" />
+                <ScalarProperty Name="REGON" ColumnName="REGON" />
+                <ScalarProperty Name="TelefonKomorkowy1" ColumnName="TelefonKomorkowy1" />
+                <ScalarProperty Name="TelefonKomorkowy2" ColumnName="TelefonKomorkowy2" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PozycjaPrzyjeciaZewnetrznegoTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.PozycjaPrzyjeciaZewnetrznegoTowaru">
+              <MappingFragment StoreEntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru">
+                <ScalarProperty Name="IdPozycjiPrzyjeciaZewnetrznegoTowaru" ColumnName="IdPozycjiPrzyjeciaZewnetrznegoTowaru" />
+                <ScalarProperty Name="IdPrzyjeciaZewnetrznego" ColumnName="IdPrzyjeciaZewnetrznego" />
+                <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+                <ScalarProperty Name="IdTowarJednostkiMiaryTowaru" ColumnName="IdTowarJednostkiMiaryTowaru" />
+                <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+                <ScalarProperty Name="CenaNettoZakupu" ColumnName="CenaNettoZakupu" />
+                <ScalarProperty Name="IdStawkiVatZakupu" ColumnName="IdStawkiVatZakupu" />
+                <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+                <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+                <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+                <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PozycjaWydaniaZewnetrznegoTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.PozycjaWydaniaZewnetrznegoTowaru">
+              <MappingFragment StoreEntitySet="PozycjaWydaniaZewnetrznegoTowaru">
+                <ScalarProperty Name="IdPozycjiWydaniaZewnetrznego" ColumnName="IdPozycjiWydaniaZewnetrznego" />
+                <ScalarProperty Name="IdWydaniaZewnetrzenegoTowaru" ColumnName="IdWydaniaZewnetrzenegoTowaru" />
+                <ScalarProperty Name="IdTowarJednostkiMiaryTowaru" ColumnName="IdTowarJednostkiMiaryTowaru" />
+                <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+                <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+                <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+                <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+                <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+                <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pracownicy">
+            <EntityTypeMapping TypeName="PDABModel1.Pracownicy">
+              <MappingFragment StoreEntitySet="Pracownicy">
+                <ScalarProperty Name="IdPracownika" ColumnName="IdPracownika" />
+                <ScalarProperty Name="Imie" ColumnName="Imie" />
+                <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="DataUrodzenia" ColumnName="DataUrodzenia" />
+                <ScalarProperty Name="DataZatrudnienia" ColumnName="DataZatrudnienia" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PracownicyTask">
+            <EntityTypeMapping TypeName="PDABModel1.PracownicyTask">
+              <MappingFragment StoreEntitySet="PracownicyTask">
+                <ScalarProperty Name="IdPracownikaTask" ColumnName="IdPracownikaTask" />
+                <ScalarProperty Name="IdPracownika" ColumnName="IdPracownika" />
+                <ScalarProperty Name="IdPracownikaPrzyjmujacego" ColumnName="IdPracownikaPrzyjmujacego" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+                <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+                <ScalarProperty Name="IdPracowmikaWystawiajacego" ColumnName="IdPracowmikaWystawiajacego" />
+                <ScalarProperty Name="IdPracownikaZatwierdzjacego" ColumnName="IdPracownikaZatwierdzjacego" />
+                <ScalarProperty Name="IdPracownikaWydajacego" ColumnName="IdPracownikaWydajacego" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PrzyjecieZewnetrzneTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.PrzyjecieZewnetrzneTowaru">
+              <MappingFragment StoreEntitySet="PrzyjecieZewnetrzneTowaru">
+                <ScalarProperty Name="IdPrzyjeciaZewnetrznego" ColumnName="IdPrzyjeciaZewnetrznego" />
+                <ScalarProperty Name="DataCzasPrzyjecia" ColumnName="DataCzasPrzyjecia" />
+                <ScalarProperty Name="DataCzasZatwierdzenia" ColumnName="DataCzasZatwierdzenia" />
+                <ScalarProperty Name="IdPracownikaWystawiajacego" ColumnName="IdPracownikaWystawiajacego" />
+                <ScalarProperty Name="IdPracownikaZatwierdzajacego" ColumnName="IdPracownikaZatwierdzajacego" />
+                <ScalarProperty Name="IdPracownikaPrzyjmujacego" ColumnName="IdPracownikaPrzyjmujacego" />
+                <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+                <ScalarProperty Name="IdZamowienia" ColumnName="IdZamowienia" />
+                <ScalarProperty Name="Numer" ColumnName="Numer" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RodzajKontrahenta">
+            <EntityTypeMapping TypeName="PDABModel1.RodzajKontrahenta">
+              <MappingFragment StoreEntitySet="RodzajKontrahenta">
+                <ScalarProperty Name="IdRodzajKontrahenta" ColumnName="IdRodzajKontrahenta" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StawkiVatZakupu">
+            <EntityTypeMapping TypeName="PDABModel1.StawkiVatZakupu">
+              <MappingFragment StoreEntitySet="StawkiVatZakupu">
+                <ScalarProperty Name="IdStawkiVatZakupu" ColumnName="IdStawkiVatZakupu" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="Wartosc" ColumnName="Wartosc" />
+                <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="PDABModel1.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Towar">
+            <EntityTypeMapping TypeName="PDABModel1.Towar">
+              <MappingFragment StoreEntitySet="Towar">
+                <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+                <ScalarProperty Name="Kod" ColumnName="Kod" />
+                <ScalarProperty Name="IdKategorii" ColumnName="IdKategorii" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+                <ScalarProperty Name="DataCZasDodania" ColumnName="DataCZasDodania" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+                <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+                <ScalarProperty Name="IdPrzyjeciaZewnetrznego" ColumnName="IdPrzyjeciaZewnetrznego" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TowarJednostkaMiaryTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.TowarJednostkaMiaryTowaru">
+              <MappingFragment StoreEntitySet="TowarJednostkaMiaryTowaru">
+                <ScalarProperty Name="IdTowarJednostkiMiaryTowaru" ColumnName="IdTowarJednostkiMiaryTowaru" />
+                <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+                <ScalarProperty Name="IdJednostkiMiaryTowaru" ColumnName="IdJednostkiMiaryTowaru" />
+                <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+                <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+                <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+                <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+                <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+                <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WydanieZewnetrzneTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.WydanieZewnetrzneTowaru">
+              <MappingFragment StoreEntitySet="WydanieZewnetrzneTowaru">
+                <ScalarProperty Name="IdWydaniaZewnetrznegoTowaru" ColumnName="IdWydaniaZewnetrznegoTowaru" />
+                <ScalarProperty Name="DataCzasWydania" ColumnName="DataCzasWydania" />
+                <ScalarProperty Name="DataCzasZatwierdzenia" ColumnName="DataCzasZatwierdzenia" />
+                <ScalarProperty Name="DataCzasOdebrania" ColumnName="DataCzasOdebrania" />
+                <ScalarProperty Name="IdPracownikaWystawiajacego" ColumnName="IdPracownikaWystawiajacego" />
+                <ScalarProperty Name="IdPracownikaZatwierdzajacego" ColumnName="IdPracownikaZatwierdzajacego" />
+                <ScalarProperty Name="IdPracownikaWydajacego" ColumnName="IdPracownikaWydajacego" />
+                <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+                <ScalarProperty Name="Numer" ColumnName="Numer" />
+                <ScalarProperty Name="IdFaktury" ColumnName="IdFaktury" />
+                <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+                <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+                <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZmianaCenyTowaru">
+            <EntityTypeMapping TypeName="PDABModel1.ZmianaCenyTowaru">
+              <MappingFragment StoreEntitySet="ZmianaCenyTowaru">
+                <ScalarProperty Name="IdZmianaCenyTowaru" ColumnName="IdZmianaCenyTowaru" />
+                <ScalarProperty Name="IdJednostkiMiaryTowaru" ColumnName="IdJednostkiMiaryTowaru" />
+                <ScalarProperty Name="DataCzasObowiazywaniaOd" ColumnName="DataCzasObowiazywaniaOd" />
+                <ScalarProperty Name="DataCzasObowiazywaniaDo" ColumnName="DataCzasObowiazywaniaDo" />
+                <ScalarProperty Name="CenaNettoSprzedazyTowaru" ColumnName="CenaNettoSprzedazyTowaru" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

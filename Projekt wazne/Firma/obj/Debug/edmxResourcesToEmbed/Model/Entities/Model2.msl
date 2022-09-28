@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PDABModel1StoreContainer" CdmEntityContainer="PDABEntities1">
+    <EntitySetMapping Name="Adres">
+      <EntityTypeMapping TypeName="PDABModel1.Adres">
+        <MappingFragment StoreEntitySet="Adres">
+          <ScalarProperty Name="IdAdresu" ColumnName="IdAdresu" />
+          <ScalarProperty Name="Miejscowosc" ColumnName="Miejscowosc" />
+          <ScalarProperty Name="Ulica" ColumnName="Ulica" />
+          <ScalarProperty Name="NrDomu" ColumnName="NrDomu" />
+          <ScalarProperty Name="NrLokalu" ColumnName="NrLokalu" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="Miasto" ColumnName="Miasto" />
+          <ScalarProperty Name="Poczta" ColumnName="Poczta" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faktura">
+      <EntityTypeMapping TypeName="PDABModel1.Faktura">
+        <MappingFragment StoreEntitySet="Faktura">
+          <ScalarProperty Name="IdFaktury" ColumnName="IdFaktury" />
+          <ScalarProperty Name="Numer" ColumnName="Numer" />
+          <ScalarProperty Name="DataCzasWystawienia" ColumnName="DataCzasWystawienia" />
+          <ScalarProperty Name="IdLokazlizacji" ColumnName="IdLokazlizacji" />
+          <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+          <ScalarProperty Name="IdStanu" ColumnName="IdStanu" />
+          <ScalarProperty Name="Rabat" ColumnName="Rabat" />
+          <ScalarProperty Name="IdFormyPlatnosci" ColumnName="IdFormyPlatnosci" />
+          <ScalarProperty Name="IdRachunku" ColumnName="IdRachunku" />
+          <ScalarProperty Name="DataCzasZaksiegowania" ColumnName="DataCzasZaksiegowania" />
+          <ScalarProperty Name="TerminPlatnosci" ColumnName="TerminPlatnosci" />
+          <ScalarProperty Name="IdPracownikaWystawiajacego" ColumnName="IdPracownikaWystawiajacego" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormaPlatnosci">
+      <EntityTypeMapping TypeName="PDABModel1.FormaPlatnosci">
+        <MappingFragment StoreEntitySet="FormaPlatnosci">
+          <ScalarProperty Name="IdFormyPlatnosci" ColumnName="IdFormyPlatnosci" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JednostkaMiaryTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.JednostkaMiaryTowaru">
+        <MappingFragment StoreEntitySet="JednostkaMiaryTowaru">
+          <ScalarProperty Name="IdJednostkiMiaryTowaru" ColumnName="IdJednostkiMiaryTowaru" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Opis" ColumnName="Opis" />
+          <ScalarProperty Name="Parametry" ColumnName="Parametry" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kontrahent">
+      <EntityTypeMapping TypeName="PDABModel1.Kontrahent">
+        <MappingFragment StoreEntitySet="Kontrahent">
+          <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="IdRodzajKontrahenta" ColumnName="IdRodzajKontrahenta" />
+          <ScalarProperty Name="IdAdresu" ColumnName="IdAdresu" />
+          <ScalarProperty Name="NIP" ColumnName="NIP" />
+          <ScalarProperty Name="REGON" ColumnName="REGON" />
+          <ScalarProperty Name="TelefonKomorkowy1" ColumnName="TelefonKomorkowy1" />
+          <ScalarProperty Name="TelefonKomorkowy2" ColumnName="TelefonKomorkowy2" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PozycjaPrzyjeciaZewnetrznegoTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.PozycjaPrzyjeciaZewnetrznegoTowaru">
+        <MappingFragment StoreEntitySet="PozycjaPrzyjeciaZewnetrznegoTowaru">
+          <ScalarProperty Name="IdPozycjiPrzyjeciaZewnetrznegoTowaru" ColumnName="IdPozycjiPrzyjeciaZewnetrznegoTowaru" />
+          <ScalarProperty Name="IdPrzyjeciaZewnetrznego" ColumnName="IdPrzyjeciaZewnetrznego" />
+          <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+          <ScalarProperty Name="IdTowarJednostkiMiaryTowaru" ColumnName="IdTowarJednostkiMiaryTowaru" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+          <ScalarProperty Name="CenaNettoZakupu" ColumnName="CenaNettoZakupu" />
+          <ScalarProperty Name="IdStawkiVatZakupu" ColumnName="IdStawkiVatZakupu" />
+          <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+          <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+          <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+          <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PozycjaWydaniaZewnetrznegoTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.PozycjaWydaniaZewnetrznegoTowaru">
+        <MappingFragment StoreEntitySet="PozycjaWydaniaZewnetrznegoTowaru">
+          <ScalarProperty Name="IdPozycjiWydaniaZewnetrznego" ColumnName="IdPozycjiWydaniaZewnetrznego" />
+          <ScalarProperty Name="IdWydaniaZewnetrzenegoTowaru" ColumnName="IdWydaniaZewnetrzenegoTowaru" />
+          <ScalarProperty Name="IdTowarJednostkiMiaryTowaru" ColumnName="IdTowarJednostkiMiaryTowaru" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+          <ScalarProperty Name="IdLokalizacji" ColumnName="IdLokalizacji" />
+          <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+          <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+          <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+          <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pracownicy">
+      <EntityTypeMapping TypeName="PDABModel1.Pracownicy">
+        <MappingFragment StoreEntitySet="Pracownicy">
+          <ScalarProperty Name="IdPracownika" ColumnName="IdPracownika" />
+          <ScalarProperty Name="Imie" ColumnName="Imie" />
+          <ScalarProperty Name="Nazwisko" ColumnName="Nazwisko" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="DataUrodzenia" ColumnName="DataUrodzenia" />
+          <ScalarProperty Name="DataZatrudnienia" ColumnName="DataZatrudnienia" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PracownicyTask">
+      <EntityTypeMapping TypeName="PDABModel1.PracownicyTask">
+        <MappingFragment StoreEntitySet="PracownicyTask">
+          <ScalarProperty Name="IdPracownikaTask" ColumnName="IdPracownikaTask" />
+          <ScalarProperty Name="IdPracownika" ColumnName="IdPracownika" />
+          <ScalarProperty Name="IdPracownikaPrzyjmujacego" ColumnName="IdPracownikaPrzyjmujacego" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+          <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+          <ScalarProperty Name="IdPracowmikaWystawiajacego" ColumnName="IdPracowmikaWystawiajacego" />
+          <ScalarProperty Name="IdPracownikaZatwierdzjacego" ColumnName="IdPracownikaZatwierdzjacego" />
+          <ScalarProperty Name="IdPracownikaWydajacego" ColumnName="IdPracownikaWydajacego" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrzyjecieZewnetrzneTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.PrzyjecieZewnetrzneTowaru">
+        <MappingFragment StoreEntitySet="PrzyjecieZewnetrzneTowaru">
+          <ScalarProperty Name="IdPrzyjeciaZewnetrznego" ColumnName="IdPrzyjeciaZewnetrznego" />
+          <ScalarProperty Name="DataCzasPrzyjecia" ColumnName="DataCzasPrzyjecia" />
+          <ScalarProperty Name="DataCzasZatwierdzenia" ColumnName="DataCzasZatwierdzenia" />
+          <ScalarProperty Name="IdPracownikaWystawiajacego" ColumnName="IdPracownikaWystawiajacego" />
+          <ScalarProperty Name="IdPracownikaZatwierdzajacego" ColumnName="IdPracownikaZatwierdzajacego" />
+          <ScalarProperty Name="IdPracownikaPrzyjmujacego" ColumnName="IdPracownikaPrzyjmujacego" />
+          <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+          <ScalarProperty Name="IdZamowienia" ColumnName="IdZamowienia" />
+          <ScalarProperty Name="Numer" ColumnName="Numer" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RodzajKontrahenta">
+      <EntityTypeMapping TypeName="PDABModel1.RodzajKontrahenta">
+        <MappingFragment StoreEntitySet="RodzajKontrahenta">
+          <ScalarProperty Name="IdRodzajKontrahenta" ColumnName="IdRodzajKontrahenta" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StawkiVatZakupu">
+      <EntityTypeMapping TypeName="PDABModel1.StawkiVatZakupu">
+        <MappingFragment StoreEntitySet="StawkiVatZakupu">
+          <ScalarProperty Name="IdStawkiVatZakupu" ColumnName="IdStawkiVatZakupu" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="Wartosc" ColumnName="Wartosc" />
+          <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PDABModel1.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towar">
+      <EntityTypeMapping TypeName="PDABModel1.Towar">
+        <MappingFragment StoreEntitySet="Towar">
+          <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="IdKategorii" ColumnName="IdKategorii" />
+          <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+          <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+          <ScalarProperty Name="DataCZasDodania" ColumnName="DataCZasDodania" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+          <ScalarProperty Name="Ilosc" ColumnName="Ilosc" />
+          <ScalarProperty Name="IdPrzyjeciaZewnetrznego" ColumnName="IdPrzyjeciaZewnetrznego" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TowarJednostkaMiaryTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.TowarJednostkaMiaryTowaru">
+        <MappingFragment StoreEntitySet="TowarJednostkaMiaryTowaru">
+          <ScalarProperty Name="IdTowarJednostkiMiaryTowaru" ColumnName="IdTowarJednostkiMiaryTowaru" />
+          <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+          <ScalarProperty Name="IdJednostkiMiaryTowaru" ColumnName="IdJednostkiMiaryTowaru" />
+          <ScalarProperty Name="IdPracownikaDodajacego" ColumnName="IdPracownikaDodajacego" />
+          <ScalarProperty Name="DataCzasDodania" ColumnName="DataCzasDodania" />
+          <ScalarProperty Name="IdPracownikaModyfikujacego" ColumnName="IdPracownikaModyfikujacego" />
+          <ScalarProperty Name="DataCzasModyfikacji" ColumnName="DataCzasModyfikacji" />
+          <ScalarProperty Name="IdPracownikaKasujacego" ColumnName="IdPracownikaKasujacego" />
+          <ScalarProperty Name="DataCzasKasowania" ColumnName="DataCzasKasowania" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WydanieZewnetrzneTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.WydanieZewnetrzneTowaru">
+        <MappingFragment StoreEntitySet="WydanieZewnetrzneTowaru">
+          <ScalarProperty Name="IdWydaniaZewnetrznegoTowaru" ColumnName="IdWydaniaZewnetrznegoTowaru" />
+          <ScalarProperty Name="DataCzasWydania" ColumnName="DataCzasWydania" />
+          <ScalarProperty Name="DataCzasZatwierdzenia" ColumnName="DataCzasZatwierdzenia" />
+          <ScalarProperty Name="DataCzasOdebrania" ColumnName="DataCzasOdebrania" />
+          <ScalarProperty Name="IdPracownikaWystawiajacego" ColumnName="IdPracownikaWystawiajacego" />
+          <ScalarProperty Name="IdPracownikaZatwierdzajacego" ColumnName="IdPracownikaZatwierdzajacego" />
+          <ScalarProperty Name="IdPracownikaWydajacego" ColumnName="IdPracownikaWydajacego" />
+          <ScalarProperty Name="IdKontrahenta" ColumnName="IdKontrahenta" />
+          <ScalarProperty Name="Numer" ColumnName="Numer" />
+          <ScalarProperty Name="IdFaktury" ColumnName="IdFaktury" />
+          <ScalarProperty Name="Uwagi" ColumnName="Uwagi" />
+          <ScalarProperty Name="CzyAktywny" ColumnName="CzyAktywny" />
+          <ScalarProperty Name="IdProduktu" ColumnName="IdProduktu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZmianaCenyTowaru">
+      <EntityTypeMapping TypeName="PDABModel1.ZmianaCenyTowaru">
+        <MappingFragment StoreEntitySet="ZmianaCenyTowaru">
+          <ScalarProperty Name="IdZmianaCenyTowaru" ColumnName="IdZmianaCenyTowaru" />
+          <ScalarProperty Name="IdJednostkiMiaryTowaru" ColumnName="IdJednostkiMiaryTowaru" />
+          <ScalarProperty Name="DataCzasObowiazywaniaOd" ColumnName="DataCzasObowiazywaniaOd" />
+          <ScalarProperty Name="DataCzasObowiazywaniaDo" ColumnName="DataCzasObowiazywaniaDo" />
+          <ScalarProperty Name="CenaNettoSprzedazyTowaru" ColumnName="CenaNettoSprzedazyTowaru" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

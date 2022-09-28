@@ -1,0 +1,112 @@
+﻿<Window x:Class="Firma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Firma"
+        mc:Ignorable="d"
+        Title="Comarch ERP Optima" Height="650" Width="800" >
+    <Window.Resources>
+        <ResourceDictionary Source="MainWindowResources.xaml"/>
+    </Window.Resources>
+    <Grid Background="Azure">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Column="0" Grid.Row="0" Margin="10">
+            <MenuItem Header="_System"/>
+            <MenuItem Header="_Ogólne"/>            
+            <MenuItem Header="_Magazyn">
+                <MenuItem Header="Przyjece zewnetrzne"/>
+                <MenuItem Header="Wydanie zewnetrzne"/>
+                <MenuItem Header="_Dodaj towar" Command="{Binding CreateTowarCommand}">
+                    <MenuItem.Icon>
+                        <Image Source="/Content/Icons/warehouse (2).png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Wyświetl towary"/>
+            </MenuItem>
+            <MenuItem Header="_Finanse">
+                <MenuItem Header="Zamowienia"/>
+                <MenuItem Header="_Faktury" InputGestureText="Ctrl+A" Command="{Binding CreatePlatnosciCommand}">
+                <MenuItem.Icon> <Image Source="/Content/Icons/finance.png" /> </MenuItem.Icon>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="Raporty"/>
+            </MenuItem>
+                  <MenuItem Header="Kadra" >
+                  <MenuItem Header="Wypłaty"/>
+                <MenuItem Header="Dodaj pracownika" Command="{Binding CreateDodajPracownikaCommand}"/>
+                <MenuItem Header="Urlopy"/>
+                <MenuItem Header="_Zarządzanie kadrą" Command="{Binding CreateKadraCommand}" >
+                    <MenuItem.Icon>
+                        <Image Source="/Content/Icons/team.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Serwis" >
+                <MenuItem Header="_Reklamacja"/>
+                <MenuItem Header="_Gwarancja"/>
+                <MenuItem Header="_Zlecenie serwisowe" Command="{Binding CreateZlecenieCommand}">
+                    <MenuItem.Icon>
+                        <Image Source="/Content/Icons/help-desk.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <ToolBar Grid.Column="0" Grid.Row="1" Margin="5">
+            <ToggleButton Width="70" Height="70" Command="{Binding CreateTowarCommand}">
+            <Image Source="/Content/Icons/warehouse (2).png" />
+            </ToggleButton>
+            <Separator/>
+            <ToggleButton Width="70" Height="70" Command="{Binding CreateKontrahenciCommand}">
+            <Image Source="/Content/Icons/target.png" />
+            </ToggleButton>
+            <Separator/>
+            <ToggleButton Width="70" Height="70" Command="{Binding CreatePlatnosciCommand}">
+            <Image Source="/Content/Icons/finance.png" />
+            </ToggleButton>
+            <Separator/>
+            <ToggleButton Width="70" Height="70" Command="{Binding CreateKadraCommand}">
+            <Image Source="/Content/Icons/team.png" />   
+            </ToggleButton>
+            <Separator/>
+            <ToggleButton Width="70" Height="70" Command="{Binding CreateZlecenieCommand}">
+            <Image Source="/Content/Icons/help-desk.png" />
+            </ToggleButton>
+            <Separator/>
+            <ToggleButton Width="70" Height="70" >
+            <Image Source="/Content/Icons/settings.png" /> 
+            </ToggleButton>
+            <Separator/>
+
+        
+        </ToolBar>
+        <Grid Grid.Column="0" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0">
+                <HeaderedContentControl Background="Azure"
+                Content="{Binding Path=Commands}"
+                ContentTemplate="{StaticResource CommandsTemplate}"
+                Style="{StaticResource MainHCCStyle}"/>
+            </Border>
+            <Border Grid.Column="1">
+                <HeaderedContentControl
+                Content="{Binding Path=Workspaces}"
+                ContentTemplate="{StaticResource WorkspacesTemplate}"
+                Style="{StaticResource MainHCCStyle}"/>
+            </Border>
+        </Grid>
+        <StatusBar Grid.Column="0" Grid.Row="3" Background="Azure">
+            <StatusBarItem HorizontalAlignment="Right">
+                <Image Source="/Content/Icons/battery.png"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>

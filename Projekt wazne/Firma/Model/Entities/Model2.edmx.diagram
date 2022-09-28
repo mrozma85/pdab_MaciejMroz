@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9f132713113147c6905885598f1df58e" Name="Diagram1">
+        <EntityTypeShape EntityType="PDABModel1.Adres" Width="1.5" PointX="1.5" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.Faktura" Width="1.5" PointX="1.5" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.FormaPlatnosci" Width="1.5" PointX="1.5" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.JednostkaMiaryTowaru" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.Kontrahent" Width="1.5" PointX="1.5" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.PozycjaPrzyjeciaZewnetrznegoTowaru" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.PozycjaWydaniaZewnetrznegoTowaru" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.Pracownicy" Width="1.5" PointX="1.5" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.PracownicyTask" Width="1.5" PointX="1.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.PrzyjecieZewnetrzneTowaru" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.RodzajKontrahenta" Width="1.5" PointX="1.5" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.StawkiVatZakupu" Width="1.5" PointX="0.75" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.Towar" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.TowarJednostkaMiaryTowaru" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.WydanieZewnetrzneTowaru" Width="1.5" PointX="3.75" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PDABModel1.ZmianaCenyTowaru" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <AssociationConnector Association="PDABModel1.FK_Kontrahent_Adres" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_Faktura_FormaPlatnosci" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_Faktura_Kontrahent" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_WydanieZewnetrzneTowaru_Faktura" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_TowarJednostkaMiaryTowaru_JednostkaMiaryTowaru" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_ZmianaCenyTowaru_JednostkaMiaryTowaru" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_Kontrahent_RodzajKontrahenta" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_PrzyjecieZewnetrzneTowaru" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_StawkiVatZakupu1" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PozycjaPrzyjeciaZewnetrznegoTowaru_Towar" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PozycjaWydaniaZewnetrznego_Towar" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PozycjaWydaniaZewnetrznegoTowaru_WydanieZewnetrzneTowaru" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PracownicyTask_Pracownicy1" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_PrzyjecieZewnetrzneTowaru_PracownicyTask" ManuallyRouted="false" />
+        <AssociationConnector Association="PDABModel1.FK_TowarJednostkaMiaryTowaru_Towar" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

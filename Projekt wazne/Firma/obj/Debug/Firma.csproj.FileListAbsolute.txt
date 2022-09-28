@@ -1,0 +1,314 @@
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\bin\Debug\Firma.exe.config
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\bin\Debug\Firma.exe
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\bin\Debug\Firma.pdb
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.csprojAssemblyReference.cache
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\NowyTowarView.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\App.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma_MarkupCompile.cache
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma_MarkupCompile.lref
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\NowyTowarView.baml
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.g.resources
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.Properties.Resources.resources
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.csproj.GenerateResource.cache
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.csproj.CoreCompileInputs.cache
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.exe
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\Firma.pdb
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\WszystkieTowaryView.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\WszystkieTowaryView.baml
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\MainWindow.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\MainWindow.baml
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\MainWindowResources.baml
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\NowaFakturaView.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\WszystkieFakturyView.g.cs
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\NowaFakturaView.baml
+C:\Users\bmielniczek\source\repos\Tworzenie interfejsow uzytkownikow\wyklad17.04.2021\Firma\Firma\obj\Debug\View\WszystkieFakturyView.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\bin\Debug\Firma.exe.config
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\bin\Debug\Firma.exe
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\bin\Debug\Firma.pdb
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.csprojAssemblyReference.cache
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\MainWindow.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\NowaFakturaView.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\NowyTowarView.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\WszystkieFakturyView.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\WszystkieTowaryView.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\App.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma_MarkupCompile.cache
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma_MarkupCompile.lref
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\MainWindow.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\MainWindowResources.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\NowaFakturaView.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\NowyTowarView.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\WszystkieFakturyView.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\View\WszystkieTowaryView.baml
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.g.resources
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.Properties.Resources.resources
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.csproj.GenerateResource.cache
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.csproj.CoreCompileInputs.cache
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.exe
+C:\Users\Piotr PC\Desktop\Interfejsu Użytkownika\wyklad17.04.2021dzala\Firma\Firma\obj\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.csprojAssemblyReference.cache
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\MainWindow.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\App.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.cache
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.lref
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.exe
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\MainWindow.baml
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.baml
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\bin\Debug\Firma.exe.config
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\bin\Debug\Firma.exe
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\bin\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\MainWindowResources.baml
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.g.resources
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.Properties.Resources.resources
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.csproj.GenerateResource.cache
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\Firma.csproj.CoreCompileInputs.cache
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.baml
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\KadryView.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\KadryView.baml
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.baml
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.g.cs
+C:\Users\mrozm\Desktop\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\Firma.exe.config
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\Firma.exe
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.AssemblyReference.cache
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KadryView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\MainWindow.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\App.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.cache
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.lref
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KadryView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\MainWindow.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\MainWindowResources.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.g.resources
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.Properties.Resources.resources
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.GenerateResource.cache
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.CoreCompileInputs.cache
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.exe
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyPracownicyView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyPracownicyView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Themes\Generic.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieAdresyView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieAdresyView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFakturyView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFakturyView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFormyPlatnosciView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFormyPlatnosciView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieJednostkiMiaryTowaryView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieJednostkiMiaryTowaryView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjePrzyjecZewnetrznychTowaruView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjePrzyjecZewnetrznychTowaruView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjeWydanZewnetrznychTowaruView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjeWydanZewnetrznychTowaruView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePrzyjeciaZewnetrzneTowaruView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePrzyjeciaZewnetrzneTowaruView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieStawkiVatZakupuView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieStawkiVatZakupuView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieTowaryView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieTowaryView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieWydaniaZewnetrzneTowaruView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieWydaniaZewnetrzneTowaruView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieZmianyCenTowarowView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieZmianyCenTowarowView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyKontrahenciView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyKontrahenciView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieRodzajeKontrahentaView.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieRodzajeKontrahentaView.baml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma_Content.g.cs
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.dll
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.xml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrozm\Desktop\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.CopyComplete
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\Firma.exe.config
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\Firma.exe
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.xml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.AssemblyReference.cache
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KadryView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\MainWindow.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyKontrahenciView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyPracownicyView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieAdresyView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFakturyView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFormyPlatnosciView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieJednostkiMiaryTowaryView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjePrzyjecZewnetrznychTowaruView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjeWydanZewnetrznychTowaruView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePrzyjeciaZewnetrzneTowaruView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieRodzajeKontrahentaView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieStawkiVatZakupuView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieTowaryView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieWydaniaZewnetrzneTowaruView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieZmianyCenTowarowView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\App.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma_Content.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.cache
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.lref
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Themes\Generic.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KadryView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\MainWindow.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\MainWindowResources.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyKontrahenciView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszyscyPracownicyView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieAdresyView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFakturyView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieFormyPlatnosciView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieJednostkiMiaryTowaryView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjePrzyjecZewnetrznychTowaruView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjeWydanZewnetrznychTowaruView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkiePrzyjeciaZewnetrzneTowaruView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieRodzajeKontrahentaView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieStawkiVatZakupuView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieTowaryView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieWydaniaZewnetrzneTowaruView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\WszystkieZmianyCenTowarowView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.g.resources
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.Properties.Resources.resources
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.GenerateResource.cache
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.CoreCompileInputs.cache
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.csproj.CopyComplete
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.exe
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyTowarZwykleView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyTowarZwykleView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowaStawkaVatZakupuView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowaStawkaVatZakupuView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowaFormaPlatnosciView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowaFormaPlatnosciView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyKontrahent1View.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyKontrahent1View.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyAdresView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyAdresView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\CommonServiceLocator.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyPracownikView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\NowyPracownikView.baml
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\RaportPrzyjecTowarowView.g.cs
+C:\Users\mrozm\Desktop\projekt_dobry_kopia1\aaaaaaaaaaa\Projekt wazne\Projekt wazne\Firma\obj\Debug\View\RaportPrzyjecTowarowView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\Firma.exe.config
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\Firma.exe
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\Firma.pdb
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\CommonServiceLocator.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\EntityFramework.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\EntityFramework.xml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.csproj.AssemblyReference.cache
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.csproj.SuggestedBindingRedirects.cache
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\KadryView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\MainWindow.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowaFormaPlatnosciView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowaStawkaVatZakupuView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyAdresView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyKontrahent1View.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyPracownikView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyTowarZwykleView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\RaportPrzyjecTowarowView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszyscyKontrahenciView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszyscyPracownicyView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieAdresyView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieFakturyView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieFormyPlatnosciView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieJednostkiMiaryTowaryView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjePrzyjecZewnetrznychTowaruView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjeWydanZewnetrznychTowaruView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkiePrzyjeciaZewnetrzneTowaruView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieRodzajeKontrahentaView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieStawkiVatZakupuView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieTowaryView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieWydaniaZewnetrzneTowaruView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieZmianyCenTowarowView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\App.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma_Content.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.cache
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma_MarkupCompile.lref
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Themes\Generic.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\KadryView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\KontrahenciView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\MainWindow.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\MainWindowResources.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowaFormaPlatnosciView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowaStawkaVatZakupuView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyAdresView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyKontrahent1View.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyPracownikView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyTowarView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\NowyTowarZwykleView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\PlatnosciView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\RaportPrzyjecTowarowView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszyscyKontrahenciView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszyscyPracownicyView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieAdresyView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieFakturyView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieFormyPlatnosciView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieJednostkiMiaryTowaryView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjePrzyjecZewnetrznychTowaruView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkiePozycjeWydanZewnetrznychTowaruView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkiePrzyjeciaZewnetrzneTowaruView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieRodzajeKontrahentaView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieStawkiVatZakupuView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieTowaryView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieWydaniaZewnetrzneTowaruView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\WszystkieZmianyCenTowarowView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\View\ZlecenieSerwisoweView.baml
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.g.resources
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.Properties.Resources.resources
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.csproj.GenerateResource.cache
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.csproj.CoreCompileInputs.cache
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.csproj.CopyComplete
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.exe
+C:\Users\mrozm\Desktop\pdab_MaciejMroz\Projekt wazne\Firma\obj\Debug\Firma.pdb
